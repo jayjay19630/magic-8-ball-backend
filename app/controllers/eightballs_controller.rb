@@ -1,0 +1,2 @@
+class EightballsController < ApplicationController
+end
