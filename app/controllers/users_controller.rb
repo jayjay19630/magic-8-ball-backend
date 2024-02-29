@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     end
 
     # PUT method to update username
-    def updateUsername
+    def update_username
         @user = User.find(params[:id])
         if !user.has_changed_username
             @user.has_changed_username = true;
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     end
 
     # PUT method to update password
-    def updatePassword
+    def update_password
         @user = User.find(params[:id])
         @user.password = user_params[:password];
         @user.save
